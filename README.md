@@ -25,4 +25,4 @@ Este proyecto está diseñado para proporcionar consejos y recursos sobre cómo 
 
 ## Ver el Sitio en Vivo
 
-Puedes ver el sitio en vivo en [Ver sitio web](https://gabrielfrancisco7.github.io/Pagina-web/).
+Ver sitio web [Ver sitio web](https://gabrielfrancisco7.github.io/Pagina-web/).
