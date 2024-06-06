@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos y Enlaces Útiles - Seguridad en Línea</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #000000; /* Color de fondo negro */
+            color: #ffffff; /* Color de texto blanco para mayor contraste */
+        }
+        .container {
+            max-width: 100%; /* Ancho máximo del contenedor */
+            padding: 20px; /* Relleno interno */
+        }
+        .titulo {
+            text-align: center; /* Centrar el título */
+        }
+        .autor {
+            text-align: center; /* Centrar el autor */
+            color: red; /* Color de texto rojo */
+            font-size: 14px; /* Tamaño de letra 14px */
+        }
+        .contenido {
+            text-align: justify; /* Justificar el contenido */
+        }
+        .imagenes {
+            text-align: center; /* Centrar las imágenes */
+            margin-top: 20px; /* Espacio superior */
+        }
+        .imagenes img {
+            margin: 10px; /* Margen entre las imágenes */
+            width: 100%; /* Ancho total */
+            max-width: 400px; /* Ancho máximo */
+            height: auto; /* Ajuste automático de la altura */
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido -->
+    <div class="container mt-5">
+        <h1 class="titulo">Recursos y Enlaces Útiles</h1>
+        <p class="contenido">Aquí tienes una lista de recursos y enlaces útiles para obtener más información sobre seguridad en línea:</p>
+        <ul class="contenido">
+            <li><a href="https://www.staysafeonline.org/" target="_blank">Stay Safe Online</a> - Recursos de seguridad cibernética para individuos, familias y empresas.</li>
+            <li><a href="https://www.cyber.gov.au/" target="_blank">Cyber.gov.au</a> - Consejos y recursos de ciberseguridad del gobierno australiano.</li>
+            <li><a href="https://www.ncsc.gov.uk/" target="_blank">National Cyber Security Centre (NCSC)</a> - Información y asesoramiento de seguridad cibernética del Reino Unido.</li>
+            <li><a href="https://www.enisa.europa.eu/" target="_blank">European Union Agency for Cybersecurity (ENISA)</a> - Recomendaciones y guías de seguridad de la UE.</li>
+            <li><a href="https://www.us-cert.gov/" target="_blank">US-CERT</a> - Equipo de respuesta a emergencias informáticas de EE. UU. con alertas y consejos de seguridad.</li>
+        </ul>
+
+        <!-- Sección de Imágenes -->
+        <div class="imagenes">
+            <img src="img/1.webp" alt="Recursos de Seguridad">
+            <img src="img/hacker-ver.webp" alt="Enlaces Útiles">
+        </div>
+    </div>
+
+    <!-- Botones de Navegación -->
+    <div class="bottom-buttons text-center mt-3">
+        <a href="#" id="anterior" class="btn btn-secondary mr-2">Anterior</a>
+        <a href="#" id="inicio" class="btn btn-primary">Inicio</a>
+    </div>
+
+    <!-- Script de JavaScript para definir las páginas -->
+    <script>
+        var paginas = [
+            "index.html",
+            "general_tips.html",
+            "password_protection.html",
+            "social_media.html",
+            "malware_protection.html",
+            "resources.html"
+        ];
+    </script>
+
+    <!-- Script de JavaScript para configurar los botones -->
+    <script>
+        var paginaActual = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+        var indexActual = paginas.indexOf(paginaActual);
+
+        var botonAnterior = document.getElementById("anterior");
+        var botonInicio = document.getElementById("inicio");
+
+        // Configurar el botón "Anterior"
+        if (indexActual > 0) {
+            botonAnterior.href = paginas[indexActual - 1];
+        }
+
+        // Configurar el botón "Inicio"
+        botonInicio.href = paginas[0];
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Autor -->
+    <div class="autor">By Gabriel Francisco Alonso</div>
+</body>
+</html>

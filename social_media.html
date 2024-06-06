@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad en Redes Sociales - Seguridad en Línea</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #000000; /* Color de fondo negro */
+            color: #ffffff; /* Color de texto blanco para mayor contraste */
+        }
+        h1 {
+            text-align: center; /* Centrar el título principal */
+        }
+        .resaltado {
+            background-color: #2d2d2d; /* Color de fondo gris oscuro */
+            padding: 10px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            margin-bottom: 20px; /* Espacio inferior */
+        }
+        .imagenes {
+            text-align: center; /* Centrar las imágenes */
+            margin-top: 20px; /* Espacio superior */
+        }
+        .imagenes img {
+            margin: 10px; /* Margen entre las imágenes */
+            width: 100%; /* Ancho total */
+            max-width: 400px; /* Ancho máximo */
+            height: auto; /* Ajuste automático de la altura */
+        }
+        .bottom-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .author {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: red; /* Color del texto en rojo */
+            font-size: 14px; /* Tamaño de fuente 14 */
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido -->
+    <div class="container mt-5">
+        <h1>Seguridad en Redes Sociales</h1>
+        
+        <p>La seguridad en redes sociales es un aspecto crítico a considerar en el uso de plataformas digitales donde se comparte información personal y se interactúa con otros usuarios. Una de las principales preocupaciones es la privacidad, ya que la información compartida en redes sociales puede ser utilizada de manera indebida si cae en manos equivocadas. Por lo tanto, es importante revisar y ajustar la configuración de privacidad de manera regular para controlar quién puede ver y acceder a nuestro contenido y perfil. Además, es esencial tener cuidado con las solicitudes de amistad o seguimiento de usuarios desconocidos y evitar compartir información sensible, como números de teléfono o direcciones, en publicaciones públicas.</p>
+
+        <p>Otro aspecto clave de la seguridad en redes sociales es la protección contra el phishing y el malware. Los ciberdelincuentes pueden utilizar técnicas de ingeniería social para engañar a los usuarios y robar sus credenciales de inicio de sesión o distribuir software malicioso a través de enlaces falsos. Por lo tanto, es importante ser cauteloso al hacer clic en enlaces sospechosos o descargar archivos adjuntos de fuentes desconocidas. Utilizar contraseñas fuertes y únicas para cada cuenta y habilitar la autenticación de dos factores siempre que sea posible también son medidas efectivas para proteger nuestras cuentas en redes sociales contra accesos no autorizados. En resumen, la seguridad en redes sociales requiere vigilancia constante y la adopción de prácticas de seguridad cibernética para proteger nuestra privacidad y seguridad en línea.</p>
+
+        <div class="resaltado">
+            <p>Aquí te presentamos algunos consejos para proteger tu privacidad y seguridad en redes sociales:</p>
+            <ul>
+                <li>Revisa y ajusta regularmente la configuración de privacidad de tus cuentas en redes sociales para controlar quién puede ver tu información y publicaciones.</li>
+                <li>No aceptes solicitudes de amistad o seguidores de personas desconocidas.</li>
+                <li>Evita compartir información personal sensible como tu dirección, número de teléfono o detalles financieros en tus perfiles públicos.</li>
+                <li>No publiques información sobre tu ubicación en tiempo real o planes de viaje que puedan comprometer tu seguridad.</li>
+                <li>Ten cuidado al hacer clic en enlaces o archivos adjuntos compartidos en redes sociales, ya que podrían ser phishing o malware.</li>
+                <li>No compartas contraseñas de tus cuentas en redes sociales con nadie y habilita la autenticación de dos factores cuando esté disponible.</li>
+                <li>Reporta cualquier actividad sospechosa o contenido inapropiado a la plataforma de redes sociales.</li>
+            </ul>
+        </div>
+
+        <!-- Imágenes -->
+        <div class="row imagenes">
+            <div class="col-md-6">
+                <img src="img/3.webp" alt="Descripción de la imagen 1" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <img src="img/2.webp" alt="Descripción de la imagen 2" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de JavaScript para definir las páginas -->
+    <script>
+        var paginas = [
+            "index.html",
+            "general_tips.html",
+            "password_protection.html",
+            "social_media.html",
+            "malware_protection.html",
+            "resources.html"
+        ];
+    </script>
+
+    <!-- Botones de Navegación -->
+    <div class="bottom-buttons text-center mt-3">
+        <a href="#" id="anterior" class="btn btn-secondary mr-2">Anterior</a>
+        <a href="#" id="inicio" class="btn btn-primary">Inicio</a>
+        <a href="#" id="siguiente" class="btn btn-secondary ml-2">Siguiente</a>
+    </div>
+
+    <!-- Script de JavaScript para configurar los botones -->
+    <script>
+        var paginaActual = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+        var indexActual = paginas.indexOf(paginaActual);
+
+        var botonAnterior = document.getElementById("anterior");
+        var botonInicio = document.getElementById("inicio");
+        var botonSiguiente = document.getElementById("siguiente");
+
+        // Configurar el botón "Anterior"
+        if (indexActual > 0) {
+            botonAnterior.href = paginas[indexActual - 1];
+        } else {
+            botonAnterior.classList.add('disabled');
+        }
+
+        // Configurar el botón "Inicio"
+        botonInicio.href = paginas[0];
+
+        // Configurar el botón "Siguiente"
+        if (indexActual < paginas.length - 1) {
+            botonSiguiente.href = paginas[indexActual + 1];
+        } else {
+            botonSiguiente.classList.add('disabled');
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <div class="author">
+        <p>By Gabriel Francisco Alonso</p>
+    </div>
+</body>
+</html>

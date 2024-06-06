@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejos Generales de Seguridad - Seguridad en Línea</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #000000; /* Color de fondo negro */
+            color: #ffffff; /* Color de texto blanco para mayor contraste */
+        }
+        .container {
+            margin-top: 50px;
+            text-align: center; /* Centrar el contenido */
+        }
+        h1, h2, p, ul {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+            text-align: left; /* Alinear el texto de las listas a la izquierda */
+        }
+        .subtema {
+            color: #ffffff; /* Color blanco */
+            font-weight: bold;
+        }
+        .imagenes {
+            text-align: center; /* Centrar las imágenes */
+            margin-top: 20px; /* Espacio superior */
+        }
+        .imagenes img {
+            margin: 10px; /* Margen entre las imágenes */
+            width: 100%; /* Ancho total */
+            max-width: 400px; /* Ancho máximo */
+            height: auto; /* Ajuste automático de la altura */
+        }
+        .author {
+            text-align: center;
+            color: #ff0000; /* Color rojo */
+            font-size: 14px; /* Tamaño de letra más grande */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido -->
+    <div class="container">
+        <h1>Consejos Generales de Seguridad</h1>
+        
+        <p>La seguridad en línea es más importante que nunca, y seguir los consejos adecuados puede ser la diferencia entre navegar con confianza o convertirse en víctima de un ciberataque. En un mundo digital donde cada clic puede ser una puerta abierta para los hackers, proteger nuestra información personal es esencial. No solo estamos hablando de evitar fraudes financieros, sino de mantener nuestra privacidad y nuestra identidad a salvo. Al implementar prácticas de seguridad, no solo nos protegemos a nosotros mismos, sino que también ayudamos a crear un entorno en línea más seguro para todos. Recuerda, estar bien informado y ser proactivo sobre la seguridad en línea no solo te protege, sino que también asegura una experiencia digital más confiable y agradable.</p>
+
+        <p>La seguridad en línea es más crucial que nunca, y seguir las mejores prácticas es fundamental para proteger nuestra información personal y profesional. Considerar consejos como usar contraseñas fuertes y únicas, habilitar la autenticación de dos factores, mantener el software actualizado y ser cauteloso con los enlaces y archivos adjuntos puede marcar una gran diferencia. En un mundo donde cada clic puede exponernos a riesgos, estas medidas no solo evitan fraudes financieros, sino que también preservan nuestra privacidad y reputación. Al implementar estas estrategias, no solo te proteges a ti mismo, sino que también contribuyes a un entorno digital más seguro para todos. Adoptar estos hábitos de seguridad cibernética es una inversión en tu tranquilidad y en la protección de tu identidad en el vasto universo digital.</p>
+
+        <p class="subtema">A continuación, encontrarás algunos consejos generales para mantener tu información segura en línea:</p>
+        <ul>
+            <li>Crea contraseñas seguras y únicas para cada cuenta.</li>
+            <li>Evita hacer clic en enlaces sospechosos o descargar archivos de fuentes no confiables.</li>
+            <li>Actualiza regularmente tu software y sistema operativo para protegerte contra vulnerabilidades de seguridad.</li>
+            <li>Utiliza autenticación de dos factores siempre que sea posible para una capa adicional de seguridad.</li>
+            <li>Protege tu información personal y financiera al realizar transacciones en línea.</li>
+            <li>Configura ajustes de privacidad en tus cuentas y redes sociales para controlar quién puede ver tu información.</li>
+            <li>Mantén un respaldo regular de tus datos importantes en caso de pérdida o robo.</li>
+            <li>Usa una conexión segura y cifrada al acceder a internet en lugares públicos.</li>
+            <li>Educa a ti mismo y a tu familia sobre las amenazas en línea y cómo protegerse.</li>
+        </ul>
+    </div>
+
+    <!-- Sección de Imágenes -->
+    <div class="imagenes">
+        <img src="img/hackeo.webp" alt="Seguridad en Línea">
+        <img src="img/unsplash2.webp" alt="Protección de Datos">
+    </div>
+
+    <!-- Botones de Navegación -->
+    <div class="bottom-buttons text-center mt-3">
+        <a href="#" id="anterior" class="btn btn-secondary mr-2">Anterior</a>
+        <a href="#" id="inicio" class="btn btn-primary">Inicio</a>
+        <a href="#" id="siguiente" class="btn btn-secondary ml-2">Siguiente</a>
+    </div>
+
+    <!-- Script de JavaScript para definir las páginas -->
+    <script>
+        var paginas = [
+            "index.html",
+            "general_tips.html",
+            "password_protection.html",
+            "social_media.html",
+            "malware_protection.html",
+            "resources.html"
+        ];
+    </script>
+
+    <!-- Script de JavaScript para configurar los botones -->
+    <script>
+        var paginaActual = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+        var indexActual = paginas.indexOf(paginaActual);
+
+        var botonAnterior = document.getElementById("anterior");
+        var botonInicio = document.getElementById("inicio");
+        var botonSiguiente = document.getElementById("siguiente");
+
+        // Configurar el botón "Anterior"
+        if (indexActual > 0) {
+            botonAnterior.href = paginas[indexActual - 1];
+        }
+
+        // Configurar el botón "Inicio"
+        botonInicio.href = paginas[0];
+
+        // Configurar el botón "Siguiente"
+        if (indexActual < paginas.length - 1) {
+            botonSiguiente.href = paginas[indexActual + 1];
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Autor -->
+    <div class="author">
+        By Gabriel Francisco Alonso
+    </div>
+</body>
+</html>
