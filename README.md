@@ -24,5 +24,4 @@ Este proyecto está diseñado para proporcionar consejos y recursos sobre cómo 
 5. Abre un Pull Request.
 
 ## Ver el Sitio en Vivo
-
-Ver sitio web [Ver sitio web](https://gabrielfrancisco7.github.io/Pagina-web/).
+[Ver sitio web](https://gabrielfrancisco7.github.io/Pagina-web/).
